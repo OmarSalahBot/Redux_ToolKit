@@ -4,11 +4,13 @@ import { addOne , muniOne , changeName } from './counterSlice';
 const Counter = () => {
     const dispatch  = useDispatch();
     const counter = useSelector(state => state.counter.value);
+    const name = "hi pple";
     const [text , setText] = useState("");
     
     function handleClick (e){
         setText(e.target.value)
         dispatch(changeName(text));
+        console.log(name);
     }
     return (
         <div>
