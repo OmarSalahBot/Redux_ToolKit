@@ -5,6 +5,7 @@ const Counter = () => {
     const dispatch  = useDispatch();
     const counter = useSelector(state => state.counter.value);
     const name = "hi pple";
+    const what =23
     const [text , setText] = useState("");
     
     function handleClick (e){
